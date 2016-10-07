@@ -1,0 +1,14 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.6",
+    "jquery": "2.2.0",
+    "jquery-validation": "1.14.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "font-awesome": "4.6.1",
+    "animate.css": "3.5.1",
+    "magnific-popup": "1.1.0",
+    "flexslider": "2.6.0"
+  }
+}
