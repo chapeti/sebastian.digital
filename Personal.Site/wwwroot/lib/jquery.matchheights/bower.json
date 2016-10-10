@@ -1,0 +1,27 @@
+{
+  "name": "jquery.matchheights",
+  "version": "0.0.2",
+  "authors": [
+    "OiNutter <willmckenzie@oinutter.co.uk>"
+  ],
+  "description": "jQuery plugin to equalize heights across DOM elements",
+  "main": "jquery.matchheights.js",
+  "keywords": [
+    "jquery",
+    "dom",
+    "manipulation",
+    "height"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KomodoHQ/jquery.matchheights",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11"
+  }
+}
