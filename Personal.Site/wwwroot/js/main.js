@@ -145,8 +145,31 @@ $(function(){
     /*-------------------------------------------------------------------*/
     /*  9. Portfolio gallery. Requires jQuery Magnific Popup plugin.
     /*-------------------------------------------------------------------*/
-    if ($.fn.magnificPopup){
-        $('.portfolio').magnificPopup({
+    if ($.fn.magnificPopup) {
+
+        $('.portfolio-youtube').magnificPopup({
+            delegate: 'a.zoom',
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+
+        $.extend(true, $.magnificPopup.defaults, {
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/',
+                        id: 'v=',
+                        src: 'http://www.youtube.com/embed/%id%?autoplay=1'
+                    }
+                }
+            }
+        });
+
+        $('.portfolio:not(.portfolio-youtube)').magnificPopup({
             delegate: 'a.zoom',
             type: 'image',
             fixedContentPos: false,
@@ -165,6 +188,9 @@ $(function(){
                 tNext: 'Next Project'
             }            
         });
+
+
+
     }
     
     

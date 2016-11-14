@@ -1,16 +1,70 @@
 ﻿@model Personal.Site.Models.HomeViewModels.HomeViewModel
 
-    <!-- HERO START -->
+
+<style>
+    
+    .project-wrapper {
+        padding: 5px;
+    }
+
+    .project-wrapper img {
+        border: 1px solid white;
+        filter: grayscale(1);
+	    transition-property: filter;
+	    transition-duration: 1s;	
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+
+    @@keyframes octocat-wave {
+        0%,100% {
+            transform: rotate(0);
+        }
+
+        20%,60% {
+            transform: rotate(-25deg);
+        }
+
+        40%,80% {
+            transform: rotate(10deg);
+        }
+    }
+
+    @@media (max-width:500px) {
+        .github-corner:hover .octo-arm {
+            animation: none;
+        }
+
+        .github-corner .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+    }
+</style>
+
+
+<!-- Fork me on Github -->
+<a href="https://github.com/chapeti/sebastian.digital" class="github-corner" aria-label="View source on Github" title="Fork me on Github">
+    <svg width="65" height="65" viewBox="0 0 250 250" style="fill: #fff; color: #151513; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1); z-index: 9999;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+
+
+
+<!-- HERO START -->
 <header id="home" class="hero">
     <div class="hero-body">
         <div class="hero-text text-center">
             <h1>
-                I'm Nick Berg <span class="blinker"></span>
+                Sebastián Guerrero <span class="blinker"></span>
             </h1>
 
-            <h1 class="small">Creative Developer</h1>
+            <h1 class="small">Developer</h1>
 
-            <p>28 years young, husband and father, coffee addict.</p>
+            <p>C#, JavaScript, Azure, ASP.Net ...</p>
 
             <div class="page-scroll">
                 <a href="#profile" class="btn btn-lg btn-custom">
@@ -25,7 +79,6 @@
 </header>
 <!-- //HERO END -->
 
-
  <!-- NAVIGATION START -->
 <nav id="navigation" class="navbar navbar-fixed-top center-menu" role="navigation">
     <div class="container navbar-container">
@@ -37,7 +90,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand visible-xs visible-sm" href="#page-top">BERG</a>
+            <a class="navbar-brand visible-xs visible-sm" href="#page-top"></a>
         </div>
         <!-- //.navbar-header -->
 
@@ -82,7 +135,7 @@
 </nav>
 <!-- //NAVIGATION END -->
 
-    <!-- PROFILE SECTION START -->
+<!-- PROFILE SECTION START -->
 <section id="profile" class="section">
     <div class="container section-wrapper">
         <div class="section-content">
@@ -150,6 +203,7 @@
     <!-- //.container -->
 </section>
 <!-- //PROFILE SECTION END -->
+
 <!-- PORTFOLIO SECTION START -->
 <section id="portfolio" class="section">
     <div class="container-fluid section-wrapper">
@@ -189,19 +243,19 @@
             <!-- PORTFOLIO START -->
             <div class="portfolio">
                 <div class="row filterable-portfolio">
-                    <div class="item col-sm-6 col-md-3 skeddoc">
+                    <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-1.jpg" class="zoom" title="Buzz Lightyear">
-                                    <i class="icon-Full-Screen"></i>
+                                <a href="https://www.youtube.com/watch?v=gmNdlPVmC-o" class="zoom" title="Play video">
+                                    <i class="icon-Video"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/25963987/Buzz-Lightyear" target="_blank" class="external-link">
+                                <a href="https://www.skeddoc.com" target="_blank" class="external-link" title="Go to skeddoc.com">
                                     <i class="icon-Link"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Buzz Lightyear</h4>
+                                <h4>What is Skeddoc?</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-1.jpg" alt="" class="img-responsive" />
@@ -212,16 +266,16 @@
                     <div class="item col-sm-6 col-md-3 skeddoc">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-2.jpg" class="zoom" title="Robosam 3">
+                                <a href="images/portfolio/project-image-2.jpg" class="zoom">
                                     <i class="icon-Full-Screen"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/25344153/Robosam-3" target="_blank" class="external-link">
-                                    <i class="icon-Link"></i>
+                                <a href="https://www.youtube.com/playlist?list=PL0pnIJbo0CoVobpEyjA638NgwA-7pk69t" target="_blank" class="external-link">
+                                    <i class="icon-Video-3"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Robosam 3</h4>
+                                <h4>Doctor's dashboard</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-2.jpg" alt="" class="img-responsive" />
@@ -232,16 +286,16 @@
                     <div class="item col-sm-6 col-md-3 skeddoc">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-3.jpg" class="zoom" title="Coke Man and Dog">
+                                <a href="images/portfolio/project-image-3.jpg" class="zoom">
                                     <i class="icon-Full-Screen"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/25821381/Coke-Man-and-Dog" target="_blank" class="external-link">
-                                    <i class="icon-Link"></i>
+                                <a href="https://www.youtube.com/playlist?list=PL0pnIJbo0CoVobpEyjA638NgwA-7pk69t" target="_blank" class="external-link">
+                                    <i class="icon-Video-3"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Coke Man and Dog</h4>
+                                <h4>Patient's CRUD</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-3.jpg" alt="" class="img-responsive" />
@@ -252,16 +306,16 @@
                     <div class="item col-sm-6 col-md-3 skeddoc">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-4.jpg" class="zoom" title="Speed Projects">
+                                <a href="images/portfolio/project-image-4.jpg" class="zoom">
                                     <i class="icon-Full-Screen"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/20195929/Speed-Projects" target="_blank" class="external-link">
-                                    <i class="icon-Link"></i>
+                                <a href="https://www.youtube.com/playlist?list=PL0pnIJbo0CoVobpEyjA638NgwA-7pk69t" target="_blank" class="external-link">
+                                    <i class="icon-Video-3"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Speed Projects</h4>
+                                <h4>Patient's edit</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-4.jpg" alt="" class="img-responsive" />
@@ -269,19 +323,19 @@
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
-                    <div class="item col-sm-6 col-md-3 lawpanel">
+                    <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-5.jpg" class="zoom" title="Wooden Rhinoceros Beetle">
-                                    <i class="icon-Full-Screen"></i>
+                                <a href="https://www.youtube.com/watch?v=UkHp4xpL_Wk" class="zoom" title="Play video">
+                                    <i class="icon-Video"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/26043281/Wooden-Rhinoceros-Beetle" target="_blank" class="external-link">
+                                <a href="http://www.lawpanel.com" target="_blank" class="external-link" title="Go to lawpanel.com">
                                     <i class="icon-Link"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Wooden Rhinoceros Beetle</h4>
+                                <h4>What is LawPanel?</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-5.jpg" alt="" class="img-responsive" />
@@ -292,16 +346,16 @@
                     <div class="item col-sm-6 col-md-3 lawpanel">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-6.jpg" class="zoom" title="The First Encounter">
+                                <a href="images/portfolio/project-image-6.jpg" class="zoom">
                                     <i class="icon-Full-Screen"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/25505317/The-first-Encounter" target="_blank" class="external-link">
-                                    <i class="icon-Link"></i>
+                                <a href="https://www.youtube.com/playlist?list=PL0pnIJbo0CoVkJ43ddWiqQQ9P37khoj_D" target="_blank" class="external-link">
+                                    <i class="icon-Video-3"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>The First Encounter</h4>
+                                <h4>Firm's dashboard</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-6.jpg" alt="" class="img-responsive" />
@@ -312,16 +366,16 @@
                     <div class="item col-sm-6 col-md-3 lawpanel">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-7.jpg" class="zoom" title="Dead Pool">
+                                <a href="images/portfolio/project-image-7.jpg" class="zoom">
                                     <i class="icon-Full-Screen"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/25763797/DEADPOOL" target="_blank" class="external-link">
-                                    <i class="icon-Link"></i>
+                                <a href="https://www.youtube.com/playlist?list=PL0pnIJbo0CoVkJ43ddWiqQQ9P37khoj_D" target="_blank" class="external-link">
+                                    <i class="icon-Video-3"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Dead Pool</h4>
+                                <h4>Portfolio's CRUD</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-7.jpg" alt="" class="img-responsive" />
@@ -332,16 +386,16 @@
                     <div class="item col-sm-6 col-md-3 lawpanel">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="images/portfolio/project-image-8.jpg" class="zoom" title="Rebus II">
+                                <a href="images/portfolio/project-image-8.jpg" class="zoom">
                                     <i class="icon-Full-Screen"></i>
                                 </a>
-                                <a href="https://www.behance.net/gallery/19401293/Rebus-2" target="_blank" class="external-link">
-                                    <i class="icon-Link"></i>
+                                <a href="https://www.youtube.com/playlist?list=PL0pnIJbo0CoVkJ43ddWiqQQ9P37khoj_D" target="_blank" class="external-link">
+                                    <i class="icon-Video-3"></i>
                                 </a>
                             </div>
                             <!-- //.project-link -->
                             <div class="project-title">
-                                <h4>Rebus II</h4>
+                                <h4>Portfolio's edit</h4>
                             </div>
                             <!-- //.project-title -->
                             <img src="images/portfolio/project-image-8.jpg" alt="" class="img-responsive" />
@@ -359,6 +413,7 @@
     <!-- //.container-fluid -->
 </section>
 <!-- //PORTFOLIO SECTION END -->
+
 <!-- SERVICES SECTION START -->
 <section id="services" class="section">
     <div class="container section-wrapper">
@@ -1488,40 +1543,63 @@
                 <!-- //.page-scroll -->
 
                 <ul class="list-inline social-icons">
+
+                    <!-- Linkedin -->
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/ricardosebastianguerrero" target="_blank" title="See my profile on Linkedin"><i class="fa fa-linkedin"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
 
+                    <!-- StackOverflow -->
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="http://stackoverflow.com/users/1071845/sebasti%C3%A1n-guerrero" target="_blank" title="See my profile on StackOverflow"><i class="fa fa-stack-overflow"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
 
+                    <!-- Twitter -->
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://twitter.com/Seba0x10" target="_blank" title="Visit my Twitter account"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+                    
+                    <!-- GitHub -->
+                    <li>
+                        <div class="item">
+                            <a href="https://github.com/chapeti" target="_blank" title="See my GitHub profile"><i class="fa fa-github"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
 
+                    <!-- YouTube -->
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            <a href="https://www.youtube.com/c/SebaGuerrero" target="_blank" title="Visit my channel on YouTube"><i class="fa fa-youtube"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
 
+                    <!-- Google+ -->
                     <li>
                         <div class="item">
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            <a href="https://plus.google.com/u/0/+SebaGuerrero" target="_blank" title="See my profile on Google+"><i class="fa fa-google-plus"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
+
+                    <!-- Facebook -->
+                    <li>
+                        <div class="item">
+                            <a href="https://web.facebook.com/ricardosebastianguerrero" target="_blank" title="Add me as friend in Facebook"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <!-- //.item -->
+                    </li>
+
                 </ul>
             </div>
             <!-- //.col-md-12 -->
@@ -1531,7 +1609,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="copyright text-center">
-                    <p class="text-grey">&copy; 2015 Nick Berg. All rights reserved.</p>
+                    <p class="text-grey">&copy; 2016 Sebastián Guerrero. All rights reserved.</p>
                 </div>
                 <!-- //.copyright -->
             </div>

@@ -44,8 +44,8 @@
       "type": "build"
     },
     "AutoMapper": "5.1.1",
-    "BundlerMinifier.Core": "2.2.281",
-    "AutoMapper.Extensions.Microsoft.DependencyInjection": "1.1.2"
+    "AutoMapper.Extensions.Microsoft.DependencyInjection": "1.1.2",
+    "BundlerMinifier.Core": "2.2.301"
   },
 
   "tools": {

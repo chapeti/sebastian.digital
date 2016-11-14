@@ -20,6 +20,7 @@
 /// <reference path="lib/isotope/js/isotope.js" />
 /// <reference path="lib/jquery.easing/js/jquery.easing.js" />
 /// <reference path="lib/jquery.matchheights/jquery.matchheights.js" />
+/// <reference path="lib/jquery/dist/jquery.js" />
 /// <reference path="lib/jquery-countTo/jquery.countTo.js" />
 /// <reference path="lib/magnific-popup/dist/jquery.magnific-popup.js" />
 /// <reference path="lib/masonry/masonry.js" />
