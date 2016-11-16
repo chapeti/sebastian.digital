@@ -14,10 +14,105 @@
 	    transition-duration: 1s;	
     }
 
+    #profile .contact-details a.btn-custom {
+        margin-top: 20px;
+    }
+
+    #resumeDetails a {
+        color: #a1a1a1;
+    }
+
+    .section .section-subtitle {
+        font-style: normal;
+    }
+
+
+    .quoteAuthor {
+        font-size: 0.8em;
+    }
+
+    .panel-group.resume .resume-item .panel .panel-heading .panel-title a i {
+        font-size: .7em;
+        margin-left: 10px;
+    }
+
+    .panel-body ul li strong {
+        color: #bcbcbc;
+    }
+
+    .tags {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .tags span {
+        background-color: #2e2e2e;
+        color: #a1a1a1!important;
+        float: left;
+        font-size: 11px!important;
+        font-weight: normal!important;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 10px;
+        padding: 0 10px 0 15px;
+        position: relative;
+        text-decoration: none;
+        -moz-border-radius-bottomright: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+        border-top-right-radius: 4px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .tags span a {
+        color: #a1a1a1;
+    }
+
+    .tags span a:hover {
+        text-decoration: underline;
+    }
+
+    .tags span:before {
+        border-color: transparent #2e2e2e transparent transparent;
+        border-style: solid;
+        border-width: 10px 10px 10px 0;
+        content: "";
+        float: left;
+        left: -10px;
+        height: 0;
+        position: absolute;
+        top: 0;
+        width: 0;
+    }
+
+    .tags span:after {
+        background-color: #a1a1a1;
+        content: "";
+        float: left;
+        height: 6px;
+        left: 0;
+        position: absolute;
+        top: 8px;
+        width: 6px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .tolkienQuote {
+        color: white;
+        font-weight: bold;
+    }
+
+
     .github-corner:hover .octo-arm {
         animation: octocat-wave 560ms ease-in-out;
     }
-
+    
     @@keyframes octocat-wave {
         0%,100% {
             transform: rotate(0);
@@ -44,14 +139,13 @@
 </style>
 
 
-<!-- Fork me on Github -->
-<a href="https://github.com/chapeti/sebastian.digital" class="github-corner" aria-label="View source on Github" title="Fork me on Github">
+<!-- FORK ME ON GITHUB -->
+<a href="https://github.com/chapeti/sebastian.digital" class="github-corner" aria-label="View source on Github" title="Fork me on Github" target="_blank">
     <svg width="65" height="65" viewBox="0 0 250 250" style="fill: #fff; color: #151513; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1); z-index: 9999;" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
         <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
-
 
 
 <!-- HERO START -->
@@ -145,16 +239,19 @@
                     <div class="profile-text padding-right-yes">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2 class="section-title">Hello, My Name is Berg.</h2>
+                                <h2 class="section-title">Hello, </h2>
                                 <p>
-                                    Nick Berg, 28 years young, born and grew up in Water Seven, Grand Line. Highly motivated creative developer with international client portfolio.
+                                    My name is Sebastián Guerrero, 37 years young, born and grew up in Salta, Argentina. 
+                                    Highly motivated developer with international client portfolio.
                                 </p>
                                 <span class="divider"></span>
-                                <p class="text-grey">
-                                    I currently work at Galley-La Company, where I spend most of my time crafting and working on awesome projects.
-                                </p>
-                                <p class="text-grey">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                <p class="text-grey" id="resumeDetails">
+                                    I am currently working in a software development company where I am part of a team of professionals specialized in the development of
+                                    web applications for clients in Europe and the USA. C # and JavaScript and implementing frameworks and libraries such as ASP.Net MVC,
+                                    NHibernate, EntityFramework, StructureMaps, SimpleInjector, LinQ, AutoMapper, SignalR, KnockoutJS, JQuery, BootStrap, etc. Most of the
+                                    solutions are implemented in <a href="https://azure.microsoft.com/en-us/" target="_azure">Azure</a> and I have experience working as a team through TeamFoundation and Git.
+
+                                    In my freetime I read, ride a bike, and watch movies.
                                 </p>
                             </div>
                             <!-- //.col-md-12 -->
@@ -168,17 +265,21 @@
                             <div class="col-sm-6 col-md-5">
                                 <h4>Contact Details</h4>
                                 <ul class="list-unstyled text-grey">
-                                    <li>Nick Berg</li>
-                                    <li>123 Water Seven, Grand Line</li>
-                                    <li>+123 456 7890</li>
-                                    <li>hello@nickberg.com</li>
-                                    <li>www.nickberg.com</li>
+                                    <li>Sebastián Guerrero</li>
+                                    <li>Tierra del fuego 104</li>
+                                    <li>Cerrillos - Salta - CP 4403</li>
+                                    <li><i class="fa fa-phone"></i> +54 387 4902037</li>
+                                    <li><i class="fa fa-mobile-phone"></i> +54 9 387 5333953</li>
+                                    <li>hola@sebastian.digital</li>
                                 </ul>
                             </div>
                             <!-- //.col-md-5 -->
                             <div class="col-sm-6 col-md-7">
-                                <a href="#" class="btn btn-lg btn-custom">
-                                    <i class="icon-File-Download"></i> Download Resume
+                                <a href="/others/CV - Ricardo Sebastian Guerrero-es.pdf" class="btn btn-lg btn-custom" target="_resumeES">
+                                    <span class="flag-icon flag-icon-es"></span> Download Resume 
+                                </a>
+                                <a href="/others/CV - Ricardo Sebastian Guerrero-en.pdf" class="btn btn-lg btn-custom" target="_resumeEN" style="display: none">
+                                    <span class="flag-icon flag-icon-gb"></span> Download Resume
                                 </a>
                             </div>
                             <!-- //.col-md-6 -->
@@ -211,7 +312,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="section-title">My latest works</h2>
-                    <p class="section-subtitle">I'm looking to expand my portfolio while I'm on top and while I'm young.</p>
+                    <p class="section-subtitle">The latest two projects where I worked as developer: <a href="https://www.skeddoc.com" alt="Skeddoc link" target="_skeddoc">Skeddoc</a> and <a href="http://www.lawpanel.com" alt="LawPanel link" target="_lawpanel">LawPanel</a>.</p>
                     <span class="divider center"></span>
                     </div>
                 <!-- //.col-md-12 -->
@@ -326,7 +427,7 @@
                     <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
                         <div class="project-wrapper">
                             <div class="project-link">
-                                <a href="https://www.youtube.com/watch?v=UkHp4xpL_Wk" class="zoom" title="Play video">
+                                <a href="https://www.youtube.com/watch?v=mMxAAuEWuQE" class="zoom" title="Play video">
                                     <i class="icon-Video"></i>
                                 </a>
                                 <a href="http://www.lawpanel.com" target="_blank" class="external-link" title="Go to lawpanel.com">
@@ -422,7 +523,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-title">What I'm Doing</h2>
                     <p class="section-subtitle">
-                        I love what I do. I take great pride in what I do. And I can't do something halfway, three-quarters, nine-tenths. If I'm going to do something, I go all the way.
+                        
                     </p>
                     <span class="divider center"></span>
                 </div>
@@ -432,72 +533,56 @@
             <!-- SERVICES START -->
             <div class="services">
                 <div class="row">
-                    <div class="col-sm-4 item top dark-bg match-height">
-                        <div class="inner-content">
-                            <i class="icon-Chess colored-text"></i>
-                            <h4>1. Strategy</h4>
-                            <p class="text-grey">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            </p>
-                        </div>
-                        <!-- //.inner-content -->
-                    </div>
+
                     <!-- //.item -->
-                    <div class="col-sm-4 item top match-height">
-                        <div class="inner-content">
-                            <i class="icon-Leafs-2 colored-text"></i>
-                            <h4>2. Branding</h4>
-                            <p class="text-grey">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            </p>
-                        </div>
-                        <!-- //.inner-content -->
-                    </div>
-                    <!-- //.item -->
-                    <div class="col-sm-4 item top dark-bg match-height">
+                    <div class="col-sm-4 item dark-bg match-height">
                         <div class="inner-content">
                             <i class=" icon-Transform-2 colored-text"></i>
-                            <h4>3. Web Design</h4>
+                            <h4>1. Web full stack</h4>
                             <p class="text-grey">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Full stack web applications from scratch, using agile methodologies,
+                                making deliveries periodically agreed and managed through
+                                tools such as TeamWork or BaseCamp. Do you need a web application?, 
+                                <a href="#contact">contact me</a>.
                             </p>
                         </div>
                         <!-- //.inner-content -->
                     </div>
-                    <!-- //.item -->
 
-                    <div class="col-sm-4 item match-height">
-                        <div class="inner-content">
-                            <i class="icon-Speach-Bubble3 colored-text"></i>
-                            <h4>4. Social Media</h4>
-                            <p class="text-grey">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            </p>
-                        </div>
-                        <!-- //.inner-content -->
-                    </div>
                     <!-- //.item -->
                     <div class="col-sm-4 item dark-bg match-height">
                         <div class="inner-content">
                             <i class="icon-Monitor-Tablet colored-text"></i>
-                            <h4>5. Development</h4>
+                            <h4>2. Desktop/mobile</h4>
                             <p class="text-grey">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                I have experience developing desktop systems and mobile applications for the management of institutions with numerous affiliates: 
+                                accounting, billings, appointments, records, reports, etc.
                             </p>
                         </div>
                         <!-- //.inner-content -->
                     </div>
+
+
                     <!-- //.item -->
                     <div class="col-sm-4 item match-height">
                         <div class="inner-content">
                             <i class="icon-Consulting colored-text"></i>
-                            <h4>6. Consulting</h4>
+                            <h4>3. Consulting</h4>
                             <p class="text-grey">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                Do you have a project in mind and want to know what technology you should use? Knowing estimated development times?
+                                Are you using your resources efficiently? 
+                                I can advise you, <a href="#contact">contact me</a>.
                             </p>
                         </div>
                         <!-- //.inner-content -->
                     </div>
+
+
+
+
+
+
+                 
                     <!-- //.item -->
                 </div>
                 <!-- //.row -->
@@ -509,6 +594,7 @@
     <!-- //.container -->
 </section>
 <!-- //SERVICES SECTION END -->
+
 <!-- STRENGTHS SECTION START -->
 <section id="strengths" class="section bg-image-yes">
     <div class="container-fluid section-wrapper">
@@ -516,7 +602,10 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-title">My Strengths</h2>
-                    <p class="section-subtitle">Failure will never overtake me if my determination to succeed is strong enough.</p>
+                    <p class="section-subtitle">
+                        <i>"I’m a great believer in luck. The harder I work, the more luck I have"</i> <br/>
+                        <span class="quoteAuthor"><a href="https://en.wikipedia.org/wiki/Thomas_Jefferson" target="_thomasJefferson">Thomas Jefferson</a></span>
+                    </p>
                     <span class="divider center"></span>
                 </div>
                 <!-- //.col-md-8 -->
@@ -555,7 +644,7 @@
                                 <div class="bar">
                                     <span class="percent">92%</span>
                                     <div class="item-progress" data-percent="92">
-                                        <span class="title">Creativity</span>
+                                        <span class="title">Compromise</span>
                                     </div>
                                     <!-- //.item-progress -->
                                 </div>
@@ -564,9 +653,9 @@
                             <!-- //.item -->
                             <div class="item">
                                 <div class="bar">
-                                    <span class="percent">71%</span>
-                                    <div class="item-progress" data-percent="71">
-                                        <span class="title">Reliable</span>
+                                    <span class="percent">70%</span>
+                                    <div class="item-progress" data-percent="70">
+                                        <span class="title">Organization</span>
                                     </div>
                                     <!-- //.item-progress -->
                                 </div>
@@ -577,7 +666,7 @@
                                 <div class="bar">
                                     <span class="percent">82%</span>
                                     <div class="item-progress" data-percent="82">
-                                        <span class="title">Comunication</span>
+                                        <span class="title">Perseverance</span>
                                     </div>
                                     <!-- //.item-progress -->
                                 </div>
@@ -586,9 +675,9 @@
                             <!-- //.item -->
                             <div class="item">
                                 <div class="bar">
-                                    <span class="percent">58%</span>
-                                    <div class="item-progress" data-percent="58">
-                                        <span class="title">Leadership</span>
+                                    <span class="percent">55%</span>
+                                    <div class="item-progress" data-percent="55">
+                                        <span class="title">Creativity</span>
                                     </div>
                                     <!-- //.item-progress -->
                                 </div>
@@ -597,9 +686,9 @@
                             <!-- //.item -->
                             <div class="item">
                                 <div class="bar">
-                                    <span class="percent">67%</span>
-                                    <div class="item-progress" data-percent="67">
-                                        <span class="title">Persuasion</span>
+                                    <span class="percent">78%</span>
+                                    <div class="item-progress" data-percent="78">
+                                        <span class="title">Enthusiasm</span>
                                     </div>
                                     <!-- //.item-progress -->
                                 </div>
@@ -620,159 +709,100 @@
     <!-- //.container -->
 </section>
 <!-- //STRENGTHS SECTION END -->
+
 <!-- RESUME SECTION START -->
 <section id="resume" class="section">
     <div class="container section-wrapper">
         <div class="section-content">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h2 class="section-title">My Resume</h2>
-                    <p class="section-subtitle">
-                        If you call failures experiments, you can put them in your resume and claim them as achievements.
+                    <h2 class="section-title uppercase">Curriculum</h2>
+
+                    <p class="section-subtitle animated bounceInLeft" style="opacity: 1;">
+
                     </p>
+
                     <span class="divider center"></span>
                 </div>
                 <!-- //.col-md-8 -->
             </div>
             <!-- //.row -->
-            <!-- EDUCATION START -->
-            <div class="row education">
-                <div class="col-md-10 col-md-offset-1">
-                    <h3>
-                        My Education
-                        <br>
-                        2003 - 2012
-                    </h3>
-                    <div class="panel-group resume" id="education">
-                        <div class="resume-item">
-                            <div class="resume-year">
-                                <span class="resume-year">2010 - 2012</span>
-                            </div>
-                            <!-- //.resume-year -->
-                            <div class="resume-btn">
-                                <a href="#education1" data-toggle="collapse" data-parent="#education"></a>
-                            </div>
-                            <!-- //.resume-btn -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <div class="panel-title">
-                                        <h4 class="resume-title">Masters Degree - University Name</h4>
-                                    </div>
-                                    <!-- //.panel-title -->
-                                </div>
-                                <!-- //.panel-heading -->
-                                <div id="education1" class="panel-collapse collapse in">
-                                    <div class="panel-body text-grey">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                        </p>
-                                    </div>
-                                    <!-- //.panel-body -->
-                                </div>
-                                <!-- //.panel-collapse -->
-                            </div>
-                            <!-- //.panel -->
-                        </div>
-                        <!-- //.resume-item -->
-                        <div class="resume-item">
-                            <div class="resume-year">
-                                <span class="resume-year">2005 - 2008</span>
-                            </div>
-                            <!-- //.resume-year -->
-                            <div class="resume-btn">
-                                <a href="#education2" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
-                            </div>
-                            <!-- //.resume-btn -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <div class="panel-title">
-                                        <h4 class="resume-title">Bachelors Degree - University Name</h4>
-                                    </div>
-                                    <!-- //.panel-title -->
-                                </div>
-                                <!-- //.panel-heading -->
-                                <div id="education2" class="panel-collapse collapse">
-                                    <div class="panel-body text-grey">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                        </p>
-                                    </div>
-                                    <!-- //.panel-body -->
-                                </div>
-                                <!-- //.panel-collapse -->
-                            </div>
-                            <!-- //.panel -->
-                        </div>
-                        <!-- //.resume-item -->
-                        <div class="resume-item">
-                            <div class="resume-year">
-                                <span class="resume-year">2003 - 2005</span>
-                            </div>
-                            <!-- //.resume-year -->
-                            <div class="resume-btn">
-                                <a href="#education3" class="collapsed" data-toggle="collapse" data-parent="#education"></a>
-                            </div>
-                            <!-- //.resume-btn -->
-                            <div class="panel">
-                                <div class="panel-heading">
-                                    <div class="panel-title">
-                                        <h4 class="resume-title">Graduation - College Name</h4>
-                                    </div>
-                                    <!-- //.panel-title -->
-                                </div>
-                                <!-- //.panel-heading -->
-                                <div id="education3" class="panel-collapse collapse">
-                                    <div class="panel-body text-grey">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                        </p>
-                                    </div>
-                                    <!-- //.panel-body -->
-                                </div>
-                                <!-- //.panel-collapse -->
-                            </div>
-                            <!-- //.panel -->
-                        </div>
-                        <!-- //.resume-item -->
-                    </div>
-                    <!-- //.panel-group -->
-                </div>
-                <!-- //.col-md-10 -->
-            </div>
-            <!-- //EDUCATION END -->
             <!-- WORK EXPERIENCE START -->
             <div class="row work-experience">
                 <div class="col-md-10 col-md-offset-1">
                     <h3>
-                        Work Experience
+                        Work experience
                         <br>
-                        2006 - Now
+                        2005 - Today
                     </h3>
+
                     <div class="panel-group resume" id="work">
-                        <div class="resume-item">
+
+                        <div class="resume-item animated bounceInUp">
                             <div class="resume-year">
-                                <span class="resume-year">2013 - Now</span>
+                                <span class="resume-year">2015 - Now</span>
                             </div>
                             <!-- //.resume-year -->
+
                             <div class="resume-btn">
-                                <a href="#work1" data-toggle="collapse" data-parent="#work"></a>
+                                <a href="#workLawPanel" data-toggle="collapse" data-parent="#work"></a>
                             </div>
                             <!-- //.resume-btn -->
+
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">Senior Designer - Galley La Company</h4>
+                                        <h4 class="resume-title">Sr. Developer - LawPanel <a href="http://www.lawpanel.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
-                                <div id="work1" class="panel-collapse collapse in">
+
+                                <div id="workLawPanel" class="panel-collapse collapse in">
                                     <div class="panel-body text-grey">
                                         <p>
-                                            Responsibilities:
-                                            <br>
-                                            Design of print collateral and websites for various clients and markets, development of new and existing brands, 3D modeling of floor and site plans.
-                                        </p>
+
+                                        </p><ul>
+                                            <li>
+                                                Analisys, coding, testing, implementation, architecture, etc.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: API centralized designed solution with successfully integration into production systems. 
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: CTO.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">               C#                  </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">           Javascript          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/AngularJS"                         target="_angular">              AngularJS           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JQuery"                            target="_jquery">               JQuery              </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/ASP.NET_MVC"                       target="_aspnetmvc">            ASP.Net MVC         </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/NHibernate"                        target="_nhibernate">           NHibernate          </a></span>
+                                                    <span><a href="https://github.com/structuremap/structuremap"                    target="_structuremap">         StructureMap        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/SignalR"                           target="_signalR">              SignalR             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">            SQL Server          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Entity_Framework"                  target="_entityframework">      EntityFramework     </a></span>
+                                                    <span><a href="https://github.com/AutoMapper/AutoMapper"                        target="_automapper">           AutoMapper          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_Azure"                   target="_azure">                Azure               </a></span>
+                                                    <span><a href="https://azure.microsoft.com/en-us/services/api-management/"      target="_azureApiManagement">   Azure API Management</a></span>
+                                                    <span><a href="https://developer.xamarin.com/guides/xamarin-forms/"             target="_xamarinforms">         Xamarin Forms       </a></span>
+                                                    <span><a href="https://www.teamwork.com/"                                       target="_teamwork">             TeamWork            </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">                 HTML                </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/CSS"                               target="_css">                  CSS                 </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Team_Foundation_Server"            target="_tfs">                  TeamFoundation      </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
                                     </div>
                                     <!-- //.panel-body -->
                                 </div>
@@ -781,30 +811,74 @@
                             <!-- //.panel -->
                         </div>
                         <!-- //.resume-item -->
-                        <div class="resume-item">
+
+                        <div class="resume-item animated bounceInUp">
                             <div class="resume-year">
-                                <span class="resume-year">2010 - 2013</span>
+                                <span class="resume-year">2014 - Now</span>
                             </div>
                             <!-- //.resume-year -->
+
                             <div class="resume-btn">
-                                <a href="#work2" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                <a href="#workBlackfish2" data-toggle="collapse" data-parent="#work"></a>
                             </div>
                             <!-- //.resume-btn -->
+
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">Graphic Designer - Company Name</h4>
+                                        <h4 class="resume-title">Sr. Developer - Blackfish <a href="http://www.blackfishweb.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
-                                <div id="work2" class="panel-collapse collapse">
+
+                                <div id="workBlackfish2" class="panel-collapse collapse in">
                                     <div class="panel-body text-grey">
                                         <p>
-                                            Responsibilities:
-                                            <br>
-                                            Design of print collateral and trade show displays, redesign of company website and microsites, design and development of email blasts, development of brands for affiliate organizations.
-                                        </p>
+
+                                        </p><ul>
+                                            <li>
+                                                Development of new products and maintenance of others already implemented.
+                                                Analysis, coding, testing, implementation and maintenance of the requirements of different projects.
+                                                Coordination of work through tools such as TeamWork or BaseCamp.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Startups created successfully from scratch for clients of Europe and USA.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Project Leader.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">               C#                  </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">           Javascript          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Knockout_(web_framework)"          target="_knockoutjs">           KnockoutJS          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JQuery"                            target="_jquery">               JQuery              </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/ASP.NET_MVC"                       target="_aspnetmvc">            ASP.Net MVC         </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/NHibernate"                        target="_nhibernate">           NHibernate          </a></span>
+                                                    <span><a href="https://github.com/structuremap/structuremap"                    target="_structuremap">         StructureMap        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/SignalR"                           target="_signalR">              SignalR             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">            SQL Server          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Entity_Framework"                  target="_entityframework">      EntityFramework     </a></span>
+                                                    <span><a href="https://github.com/AutoMapper/AutoMapper"                        target="_automapper">           AutoMapper          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_Azure"                   target="_azure">                Azure               </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Team_Foundation_Server"            target="_tfs">                  TeamFoundation      </a></span>
+                                                    <span><a href="https://www.teamwork.com/"                                       target="_teamwork">             TeamWork            </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">                 HTML                </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/CSS"                               target="_css">                  CSS                 </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Language_Integrated_Query"         target="_linq">                 LinQ                </a></span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
                                     </div>
                                     <!-- //.panel-body -->
                                 </div>
@@ -813,30 +887,63 @@
                             <!-- //.panel -->
                         </div>
                         <!-- //.resume-item -->
-                        <div class="resume-item">
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
                             <div class="resume-year">
-                                <span class="resume-year">2007 - 2010</span>
+                                <span class="resume-year">2013 - 2014</span>
                             </div>
                             <!-- //.resume-year -->
+
                             <div class="resume-btn">
-                                <a href="#work3" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                <a href="#workBrightstar" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
                             </div>
                             <!-- //.resume-btn -->
+
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">IT Specialist - Company Name</h4>
+                                        <h4 class="resume-title">Sr. Developer - Brightstar Corp.<a href="http://www.brightstar.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
-                                <div id="work3" class="panel-collapse collapse">
+
+                                <div id="workBrightstar" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                     <div class="panel-body text-grey">
                                         <p>
-                                            Responsibilities:
-                                            <br>
-                                            Filming and editing of promotional videos, administration of system and network integrity.
-                                        </p>
+                                        </p><ul>
+
+                                            <li>
+                                                Development and maintenance of support solutions to the Production Line. Third-level support to the production area in the event of any downtime in production lines.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Leadership and implementation of a real-time monitoring system for all LG branded production lines, offering through graphics and automated indicators a general and detailed overview of the production status of the shift second by second.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Sector supervisory.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">           C#              </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">       Javascript      </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">             HTML            </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Linux"                             target="_linux">            Linux           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Tcl"                               target="_tcl">              TCL             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Windows_Forms"                     target="_winforms">         WinForms        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"                      target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">        SQL Server      </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Oracle_Database"                   target="_oracledatabase">   Oracle Database </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
                                     </div>
                                     <!-- //.panel-body -->
                                 </div>
@@ -845,30 +952,66 @@
                             <!-- //.panel -->
                         </div>
                         <!-- //.resume-item -->
-                        <div class="resume-item">
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
                             <div class="resume-year">
-                                <span class="resume-year">2006 - 2007</span>
+                                <span class="resume-year">2012 - 2013</span>
                             </div>
                             <!-- //.resume-year -->
+
                             <div class="resume-btn">
-                                <a href="#work4" class="collapsed" data-toggle="collapse" data-parent="#work"></a>
+                                <a href="#workBlackfish1" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
                             </div>
                             <!-- //.resume-btn -->
+
                             <div class="panel">
                                 <div class="panel-heading">
                                     <div class="panel-title">
-                                        <h4 class="resume-title">Graphic Designer Intern - Company Name</h4>
+                                        <h4 class="resume-title">Sr. Developer - Blackfish<a href="http://www.blackfishweb.com/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
                                     </div>
                                     <!-- //.panel-title -->
                                 </div>
                                 <!-- //.panel-heading -->
-                                <div id="work4" class="panel-collapse collapse">
+
+                                <div id="workBlackfish1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                                     <div class="panel-body text-grey">
                                         <p>
-                                            Responsibilities:
-                                            <br>
-                                            Redesign of brand guidelines and standards microsite, design of departmental logo lock-ups, photography of products for marketing collateral, design of corporate Twitter layout.
-                                        </p>
+                                        </p><ul>
+                                            <li>
+                                                Development of new products and maintenance of others already implemented. Analysis, coding, testing, implementation and maintenance of the requirements of the different projects. Use of agile development methodologies with sprints every two weeks with clients. Coordination of work through tools such as TeamWork or BaseCamp. Development of applications for technological startups.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Implementation of a SaS System for the management of private health in Milan (Italy) called "Skeddoc" which currently continues to be offered to more than 8,000 patients and doctors.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Project Leader.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"    target="_csharp">               C#                  </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/JavaScript"                        target="_javascript">           Javascript          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/HTML"                              target="_html">                 HTML                </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/CSS"                               target="_css">                  CSS                 </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"              target="_sqlserver">            SQL Server          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/NHibernate"                        target="_nhibernate">           NHibernate          </a></span>
+                                                    <span><a href="https://github.com/structuremap/structuremap"                    target="_structuremap">         StructureMap        </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/ASP.NET_MVC"                       target="_aspnetmvc">            ASP.Net MVC         </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_Azure"                   target="_azure">                Azure               </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Knockout_(web_framework)"          target="_knockoutjs">           KnockoutJS          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/SignalR"                           target="_signalR">              SignalR             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Language_Integrated_Query"         target="_linq">                 LinQ                </a></span>
+                                                    <span><a href="https://github.com/AutoMapper/AutoMapper"                        target="_automapper">           AutoMapper          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
                                     </div>
                                     <!-- //.panel-body -->
                                 </div>
@@ -877,20 +1020,316 @@
                             <!-- //.panel -->
                         </div>
                         <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2007 - 2012</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workCajaPrevision" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Sr. Developer - Caja de Previsión Social <a href="http://www.cajapreving.org.ar/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workCajaPrevision" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Analysis and proposal of change of technology. Migration of the data warehouse. Development, implementation and maintenance of an Integral Management System of the organization.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Achievement</strong>: Migration of a system that operated 15 years ago and with information of 4,700 members to a new system more modern, leaving the information, processes and new developments 100% functional.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Reporting to</strong>: General manager.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/MySQL"                 target="_mysql">            MySQL           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/PHP"                   target="_php">              PHP             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Debian"                target="_debian">           Debian          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server"    target="_apache">           Apache          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2007 - 2011</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workOscopaipa" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">SSr. Developer - OSCOPAIPA <a href="http://www.oscopaipa.org.ar/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workOscopaipa" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Development, analysis and maintenance of the Management System of the institution. Configuration and maintenance of servers of BBDD, mail and web. Management of own annual budget. Analysis of the requirements of the Administrative area. Coordination of two systems to exchange information through APIs and other interaction mechanisms.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Achievement</strong>: Complete systematization of all the fundamental processes of the company, thanks to which they stopped using Excel spreadsheets, individual files of affiliates in paper, and written accounting books.
+                                                <br><br>
+                                            </li>
+                                            <li>
+                                                <strong>Reporting to</strong>: General manager.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/MySQL"                 target="_mysql">            MySQL           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/PHP"                   target="_php">              PHP             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Debian"                target="_debian">           Debian          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server"    target="_apache">           Apache          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2008 - 2009</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workEnjasa" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">SSr. Developer - ENJASA S.A.</h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workEnjasa" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                        </p><ul>
+
+                                            <li>
+                                                Development and maintenance of Integral Management System (HR, Accounting, Marketing, Management, among others). Mobile Developments. Coding, testing and implementation of in-door solutions.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achievement</strong>: Implementation of a Control System for poker tournaments at the Sheraton Salta Casino.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: Project leader.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Microsoft_SQL_Server"  target="_sqlserver">        SQL Server      </a></span>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                        <div class="resume-item animated bounceInUp" style="opacity: 1;">
+                            <div class="resume-year">
+                                <span class="resume-year">2005 - 2011</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#workCopaipa" class="collapsed" data-toggle="collapse" data-parent="#work" aria-expanded="false"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Jr. Developer - COPAIPA <a href="http://www.copaipa.org.ar/" target="_blank"><i class="fa fa-external-link"></i></a></h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="workCopaipa" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body text-grey">
+                                        <p> 
+                                        </p><ul>
+
+                                            <li>
+                                                Design, development and maintenance of the Integral Management System of the institution. Survey of needs of Administrative areas, Accounting, Management, Press, among others. Design and development of work systematization solutions through a holistic management perspective. Error correction. Planning of new functionalities and improvement of those already implemented.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Achivement</strong>: Completion of a complete systematization and modernization of the institution, failing to use Excel spreadsheets and reducing in a significant amount the manual processes.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Reporting to</strong>: General manager.
+                                                <br><br>
+                                            </li>
+
+                                            <li>
+                                                <strong>Technologies</strong>:
+                                                <div class="tags">
+                                                    <span><a href="https://en.wikipedia.org/wiki/Visual_Basic"          target="_vb6">              VB6             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/MySQL"                 target="_mysql">            MySQL           </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/PHP"                   target="_php">              PHP             </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Crystal_Reports"       target="_crystalreports">   Crystal Reports </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Debian"                target="_debian">           Debian          </a></span>
+                                                    <span><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server"    target="_apache">           Apache          </a></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
                     </div>
                     <!-- //.panel-group -->
                 </div>
                 <!-- //.col-md-10 -->
             </div>
             <!-- //WORK EXPERIENCE END -->
+            <!-- EDUCATION START -->
+            <div class="row education">
+                <div class="col-md-10 col-md-offset-1">
+                    <h3>
+                        My education
+                        <br>
+                        1995 - 2001
+                    </h3>
+
+                    <div class="panel-group resume" id="education">
+
+                        <div class="resume-item">
+                            <div class="resume-year">
+                                <span class="resume-year">1995 - 2001</span>
+                            </div>
+                            <!-- //.resume-year -->
+
+                            <div class="resume-btn">
+                                <a href="#education1" data-toggle="collapse" data-parent="#education"></a>
+                            </div>
+                            <!-- //.resume-btn -->
+
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <h4 class="resume-title">Técnico en Computación <a href="http://catalogo.inet.edu.ar/institucion/escuela-de-educacion-tecnica-y-centro-de-formacion-profesional-c-f-p-n-3-139-general-martin-miguel-d-3646" target="_eet3139"><i class="fa fa-external-link"></i></a> </h4>
+                                    </div>
+                                    <!-- //.panel-title -->
+                                </div>
+                                <!-- //.panel-heading -->
+
+                                <div id="education1" class="panel-collapse collapse in">
+                                    <div class="panel-body text-grey">
+                                        <p>
+                                            Escuela Nacional de Educación Técnica N° 3 - General Martín Miguel de Güemes 
+                                        </p>
+                                    </div>
+                                    <!-- //.panel-body -->
+                                </div>
+                                <!-- //.panel-collapse -->
+                            </div>
+                            <!-- //.panel -->
+                        </div>
+                        <!-- //.resume-item -->
+
+                    </div>
+                    <!-- //.panel-group -->
+                </div>
+                <!-- //.col-md-10 -->
+            </div>
+            <!-- //EDUCATION END -->
+
+
         </div>
         <!-- //.section-content -->
     </div>
     <!-- //.container -->
 </section>
 <!-- //RESUME SECTION END -->
+
 <!-- REFERENCES SECTION START -->
-<section id="references" class="section bg-image-yes">
+<section id="references" class="section bg-image-yes" style="display: none">
     <div class="container-fluid section-wrapper">
         <div class="section-content">
             <div class="row">
@@ -1058,6 +1497,7 @@
     <!-- //.container -->
 </section>
 <!-- //REFERENCES SECTION END -->
+
 <!-- SKILLS SECTION START -->
 <section id="skills" class="section">
     <div class="container section-wrapper">
@@ -1065,7 +1505,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-title">Skills & Expertise</h2>
-                    <p class="section-subtitle">A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.</p>
+                    <p class="section-subtitle"></p>
                     <span class="divider center"></span>
                 </div>
                 <!-- //.col-md-8 -->
@@ -1077,11 +1517,47 @@
                     <div class="col-sm-4 col-md-2">
                         <div class="item">
                             <div class="circle">
+                                <span class="item-progress" data-percent="70"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">70%</span>
+                            <h4>C#</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="60"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">60%</span>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="item-progress" data-percent="75"></span>
+                            </div>
+                            <!-- //.circle -->
+                            <span class="percent">75%</span>
+                            <h4>ASP.Net MVC</h4>
+                        </div>
+                        <!-- //.item -->
+                    </div>
+                    <!-- //.col-md-2 -->
+                    <div class="col-sm-4 col-md-2">
+                        <div class="item">
+                            <div class="circle">
                                 <span class="item-progress" data-percent="45"></span>
                             </div>
                             <!-- //.circle -->
                             <span class="percent">45%</span>
-                            <h4>HTML5 + CSS3</h4>
+                            <h4>HTML+CSS3</h4>
                         </div>
                         <!-- //.item -->
                     </div>
@@ -1089,47 +1565,11 @@
                     <div class="col-sm-4 col-md-2">
                         <div class="item">
                             <div class="circle">
-                                <span class="item-progress" data-percent="65"></span>
+                                <span class="item-progress" data-percent="60"></span>
                             </div>
                             <!-- //.circle -->
-                            <span class="percent">65%</span>
-                            <h4>Angular JS</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" data-percent="55"></span>
-                            </div>
-                            <!-- //.circle -->
-                            <span class="percent">55%</span>
-                            <h4>Laravel</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" data-percent="45"></span>
-                            </div>
-                            <!-- //.circle -->
-                            <span class="percent">45%</span>
-                            <h4>Photoshop</h4>
-                        </div>
-                        <!-- //.item -->
-                    </div>
-                    <!-- //.col-md-2 -->
-                    <div class="col-sm-4 col-md-2">
-                        <div class="item">
-                            <div class="circle">
-                                <span class="item-progress" data-percent="65"></span>
-                            </div>
-                            <!-- //.circle -->
-                            <span class="percent">65%</span>
-                            <h4>Cinema 4D</h4>
+                            <span class="percent">60%</span>
+                            <h4>Azure</h4>
                         </div>
                         <!-- //.item -->
                     </div>
@@ -1137,11 +1577,11 @@
                     <div class="col-sm-4 col-md-2">
                         <div class="item last">
                             <div class="circle">
-                                <span class="item-progress" data-percent="55"></span>
+                                <span class="item-progress" data-percent="65"></span>
                             </div>
                             <!-- //.circle -->
-                            <span class="percent">55%</span>
-                            <h4>After Effects</h4>
+                            <span class="percent">65%</span>
+                            <h4>JS Frameworks</h4>
                         </div>
                         <!-- //.item -->
                     </div>
@@ -1156,6 +1596,7 @@
     <!-- //.container -->
 </section>
 <!-- //SKILLS SECTION END -->
+
 <!-- KNOWLEDGE SECTION START -->
 <section id="knowledge" class="section">
     <div class="container section-wrapper">
@@ -1163,7 +1604,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-title">Knowledge</h2>
-                    <p class="section-subtitle">Human behavior flows from three main sources: desire, emotion, and knowledge.</p>
+                    <p class="section-subtitle"></p>
                     <span class="divider center"></span>
                 </div>
                 <!-- //.col-md-8 -->
@@ -1174,28 +1615,28 @@
                 <div class="col-sm-6">
                     <div class="bar-chart">
                         <div class="item">
-                            <h4>Brand Marketing</h4>
+                            <h4>Object oriented programming</h4>
                             <div class="bar">
-                                <span class="percent">45%</span>
-                                <span class="item-progress" data-percent="45"></span>
+                                <span class="percent">85%</span>
+                                <span class="item-progress" data-percent="85"></span>
                             </div>
                             <!-- //.bar -->
                         </div>
                         <!-- //.item -->
                         <div class="item">
-                            <h4>Web Development</h4>
+                            <h4>Graphic design</h4>
+                            <div class="bar">
+                                <span class="percent">20%</span>
+                                <span class="item-progress" data-percent="20"></span>
+                            </div>
+                            <!-- //.bar -->
+                        </div>
+                        <!-- //.item -->
+                        <div class="item">
+                            <h4>SOLID</h4>
                             <div class="bar">
                                 <span class="percent">65%</span>
                                 <span class="item-progress" data-percent="65"></span>
-                            </div>
-                            <!-- //.bar -->
-                        </div>
-                        <!-- //.item -->
-                        <div class="item">
-                            <h4>Digital Design</h4>
-                            <div class="bar">
-                                <span class="percent">55%</span>
-                                <span class="item-progress" data-percent="55"></span>
                             </div>
                             <!-- //.bar -->
                         </div>
@@ -1207,28 +1648,28 @@
                 <div class="col-sm-6">
                     <div class="bar-chart">
                         <div class="item">
-                            <h4>Brand Design</h4>
+                            <h4>Technology choice</h4>
                             <div class="bar">
-                                <span class="percent">45%</span>
-                                <span class="item-progress" data-percent="45"></span>
+                                <span class="percent">90%</span>
+                                <span class="item-progress" data-percent="90"></span>
                             </div>
                             <!-- //.bar -->
                         </div>
                         <!-- //.item -->
                         <div class="item">
-                            <h4>Internet Marketing</h4>
+                            <h4>Best coding practices</h4>
                             <div class="bar">
-                                <span class="percent">65%</span>
-                                <span class="item-progress" data-percent="65"></span>
+                                <span class="percent">80%</span>
+                                <span class="item-progress" data-percent="80"></span>
                             </div>
                             <!-- //.bar -->
                         </div>
                         <!-- //.item -->
                         <div class="item">
-                            <h4>Video Editing</h4>
+                            <h4>Application architecture</h4>
                             <div class="bar">
-                                <span class="percent">55%</span>
-                                <span class="item-progress" data-percent="55"></span>
+                                <span class="percent">90%</span>
+                                <span class="item-progress" data-percent="90"></span>
                             </div>
                             <!-- //.bar -->
                         </div>
@@ -1246,8 +1687,9 @@
 
 </section>
 <!-- //KNOWLEDGE SECTION END -->
+
 <!-- ACCOLADES SECTION START -->
-<section id="accolades" class="section">
+<section id="accolades" class="section" style="display: none">
     <div class="container section-wrapper">
         <div class="section-content">
             <div class="row">
@@ -1317,6 +1759,7 @@
     <!-- //.container -->
 </section>
 <!-- //ACCOLADES SECTION END -->
+
 <!-- MILESTONES SECTION START -->
 <section id="milestones" class="section bg-image-yes">
     <div class="container-fluid section-wrapper">
@@ -1324,7 +1767,10 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <h2 class="section-title">Milestones Achieved</h2>
-                    <p class="section-subtitle">My path has not been determined. I shall have more experiences and pass many more milestones.</p>
+                    <p class="section-subtitle">
+                        <i class="tolkienQuote">"It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to."</i><br/>
+                        <span class="quoteAuthor"><a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien" target="_tolkien">J.R.R. Tolkien</a></span>
+                    </p>
                     <span class="divider center"></span>
                 </div>
                 <!-- //.col-md-8 -->
@@ -1387,6 +1833,7 @@
     <!-- //.container -->
 </section>
 <!-- //MILESTONES SECTION END -->
+
 <!-- WORK PROCESS SECTION START -->
 <section id="work-process" class="section">
     <div class="container section-wrapper">
@@ -1490,6 +1937,7 @@
     <!-- //.container -->
 </section>
 <!-- //WORK PROCESS SECTION END -->
+
 <!-- CONTACT SECTION START -->
 <section id="contact" class="section">
     <div class="container section-wrapper">
@@ -1532,6 +1980,7 @@
     <!-- //.container -->
 </section>
 <!-- //CONTACT SECTION END -->
+
 <!-- FOOTER START -->
 <footer class="footer">
     <div class="container">
