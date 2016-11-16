@@ -2,39 +2,14 @@
   "userSecretsId": "aspnet-Personal.Site-059ee963-39d2-4dc2-86ca-ae9f333e6e55",
 
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "version": "1.0.1",
-      "type": "platform"
-    },
-    "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
-    "Microsoft.AspNetCore.Diagnostics": "1.0.0",
-    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
-    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
-    "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Razor.Tools": {
       "version": "1.0.0-preview2-final",
-      "type": "build"
-    },
-    "Microsoft.AspNetCore.Routing": "1.0.1",
-    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
-    "Microsoft.EntityFrameworkCore.SqlServer.Design": {
-      "version": "1.0.1",
       "type": "build"
     },
     "Microsoft.EntityFrameworkCore.Tools": {
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
-    "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
-    "Microsoft.Extensions.Logging": "1.0.0",
-    "Microsoft.Extensions.Logging.Console": "1.0.0",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0",
-    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
     "Microsoft.VisualStudio.Web.CodeGeneration.Tools": {
       "version": "1.0.0-preview2-final",
       "type": "build"
@@ -45,7 +20,27 @@
     },
     "AutoMapper": "5.1.1",
     "AutoMapper.Extensions.Microsoft.DependencyInjection": "1.1.2",
-    "BundlerMinifier.Core": "2.2.301"
+    "BundlerMinifier.Core": "2.2.301",
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.1.0",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
+    "Microsoft.AspNetCore.Mvc": "1.1.0",
+    "Microsoft.AspNetCore.Routing": "1.1.0",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
+    "Microsoft.AspNetCore.StaticFiles": "1.1.0",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+    "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.0",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.0",
+    "Microsoft.Extensions.Configuration.Json": "1.1.0",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.1.0",
+    "Microsoft.Extensions.Logging": "1.1.0",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Microsoft.Extensions.Logging.Debug": "1.1.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
+    "Microsoft.NETCore.App": "1.1.0",
+    "Microsoft.AspNetCore.Authentication.Cookies": "1.1.0",
+    "Microsoft.AspNetCore.Diagnostics": "1.1.0",
+    "Personal.Services": "1.0.0-*"
   },
 
   "tools": {
@@ -93,6 +88,10 @@
   "scripts": {
     "prepublish": [ "bower install", "dotnet bundle" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+  },
+
+  "runtimes": {
+    "win10-x64": {}
   }
 
 }

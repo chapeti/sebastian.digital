@@ -8,14 +8,14 @@ namespace Personal.Site.Services
     public class BaseControllerService : IBaseControllerService
     {
         #region Dependencies
-        private readonly IOptions<LayoutSettings> _optionsAccessor;
+        private readonly IOptions<LayoutSettings> _layoutSettings;
         private readonly IMapper _mapper;
         #endregion
 
         #region Constructor
-        public BaseControllerService(IOptions<LayoutSettings> optionsAccessor, IMapper mapper)
+        public BaseControllerService(IOptions<LayoutSettings> layoutSettings, IMapper mapper)
         {
-            _optionsAccessor = optionsAccessor;
+            _layoutSettings = layoutSettings;
             _mapper = mapper;
         }
         #endregion
@@ -23,7 +23,7 @@ namespace Personal.Site.Services
         #region IBaseControllerService
         public TViewModel AddBaseViewModel<TViewModel>(TViewModel instance) where TViewModel : LayoutViewModel
         {
-            return _mapper.Map(_optionsAccessor.Value, instance);
+            return _mapper.Map(_layoutSettings.Value, instance);
         }
         #endregion
     }
