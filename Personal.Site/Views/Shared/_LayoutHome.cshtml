@@ -46,27 +46,29 @@
 
 
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 
         <!-- Template -->
-        <link href="~/css/berg.css" asp-append-version="true"               rel="stylesheet" type="text/css"/>
+        <link href="~/css/berg.css" asp-append-version="true" rel="stylesheet" type="text/css" />
 
         <!-- Google Font -->
-        <link href="http://fonts.googleapis.com/css?family=Lato:400,700"    rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
 
         <!-- Icons -->
-        <link href="lib/icons-mind/style.css"                               rel="stylesheet" type="text/css">
-        <link href="lib/font-awesome/css/font-awesome.css"                  rel="stylesheet" type="text/css">
+        <link href="lib/icons-mind/style.css" rel="stylesheet" type="text/css">
+        <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 
         <!-- Plugins -->
-        <link href="lib/jpreloader/css/jpreloader.css"                      rel="stylesheet" type="text/css">
-        <link href="lib/animate.css/animate.css"                            rel="stylesheet" type="text/css">
-        <link href="lib/magnific-popup/dist/magnific-popup.css"             rel="stylesheet" type="text/css">
-        <link href="lib/flexslider/flexslider.css"                          rel="stylesheet" type="text/css">
-        <link href="lib/Morphext/dist/morphext.css"                         rel="stylesheet" type="text/css">
+        <link href="lib/jpreloader/css/jpreloader2.css" rel="stylesheet" type="text/css">
+        <link href="lib/animate.css/animate.css" rel="stylesheet" type="text/css">
+        <link href="lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet" type="text/css">
+        <link href="lib/flexslider/flexslider.css" rel="stylesheet" type="text/css">
+        <link href="lib/Morphext/dist/morphext.css" rel="stylesheet" type="text/css">
+        <link href="lib/flag-icon-css/css/flag-icon.css" rel="stylesheet" type="text/css">
+
+        <!-- Color CSS -->
+        <link href="css/colors/blue.css" rel="stylesheet" type="text/css">
     </environment>
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
@@ -113,26 +115,34 @@
 
         <script src="~/js/site.js" asp-append-version="true"></script>
 
-        <!-- Skype chat button -->
-        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
-
-
     </environment>
 
     <environment names="Staging,Production">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery">
+        <!-- Plugins JS -->
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/jpreloader/js/jpreloader.js"></script>
+        <script src="~/lib/detectmobilebrowser/detectmobilebrowser.js"></script>
+        <script src="~/lib/debouncer/debouncer.js"></script>
+        <script src="~/lib/jquery.easing/js/jquery.easing.min.js"></script>
+        <script src="~/lib/jquery.sticky/jquery.sticky.js"></script>
+        <script src="~/lib/protonet/jquery.inview/jquery.inview.js"></script>
+        <script src="~/lib/jquery.matchheights/jquery.matchheights.js"></script>
+        <script src="~/lib/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="~/lib/flexSlider/jquery.flexslider-min.js"></script>
+        <script src="~/lib/jquery-countTo/jquery.countTo.js"></script>
+        <script src="~/lib/isotope/dist/isotope.pkgd.js"></script>
 
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        <!-- Main JS -->
+        <script src="~/js/main.js"></script>
 
-        
-        </script>
+        <!-- Filterable Portfolio JS -->
+        <script src="~/js/filterable-portfolio.js"></script>
 
+        <!-- Animation JS (Optional) -->
+        <script src="~/js/animation.js"></script>
 
+        <script src="~/js/site.js" asp-append-version="true"></script>
         
     </environment>
 
