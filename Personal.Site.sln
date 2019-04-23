@@ -1,20 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Personal.Site", "Personal.Site\Personal.Site.xproj", "{2674084A-532B-4EBC-97E0-D566B6B95F3E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeamworkNet", "TeamworkNet", "{A1C7C511-B0D4-4624-B567-8E9BE05426C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Site", "Personal.Site\Personal.Site.csproj", "{2674084A-532B-4EBC-97E0-D566B6B95F3E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{09347E17-E3DC-47B9-9AD7-ED13BBBB4147} = {09347E17-E3DC-47B9-9AD7-ED13BBBB4147}
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeamworkNet", "TeamworkNet", "{A1C7C511-B0D4-4624-B567-8E9BE05426C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamworkNet.Base", "TeamworkNet.Base\TeamworkNet.Base.csproj", "{09347E17-E3DC-47B9-9AD7-ED13BBBB4147}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TeamworkNet.Base", "TeamworkNet.Base\TeamworkNet.Base.xproj", "{09347E17-E3DC-47B9-9AD7-ED13BBBB4147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Services", "Personal.Services\Personal.Services.csproj", "{4DB6A6AE-70D5-4968-A1E4-31B5879CD71B}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Personal.Services", "Personal.Services\Personal.Services.xproj", "{4DB6A6AE-70D5-4968-A1E4-31B5879CD71B}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Personal.Models", "Personal.Models\Personal.Models.xproj", "{246DF0B0-05DA-4E33-9739-03E476881C1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personal.Models", "Personal.Models\Personal.Models.csproj", "{246DF0B0-05DA-4E33-9739-03E476881C1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +44,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{09347E17-E3DC-47B9-9AD7-ED13BBBB4147} = {A1C7C511-B0D4-4624-B567-8E9BE05426C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF17698A-53F4-45E7-A9A9-2CEA6E66CF41}
 	EndGlobalSection
 EndGlobal

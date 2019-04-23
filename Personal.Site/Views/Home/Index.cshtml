@@ -126,6 +126,30 @@
         font-weight: bold;
     }
 
+    .stopfade { 
+        opacity: .5;
+    }
+
+    .video-background {
+        width: 100%; /* width needs to be set to 100% */
+        height: 100%; /* height needs to be set to 100% */
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-color: black;
+        background-size: cover;
+        transition: 1s opacity;
+        opacity: 0.2;
+    }
+
+    header.hero {
+        background-image: none;
+    }
+
+    #resumeDetails a {
+        color: white;
+    }
     
     @@keyframes octocat-wave {
         0%,100% {
@@ -164,15 +188,22 @@
 
 <!-- HERO START -->
 <header id="home" class="hero">
+    
+    <video class="video-background" id="bgvid" playsinline autoplay muted loop>
+        <source src="videos/code_whiteblack_07.mp4" type="video/mp4">
+    </video>
+
     <div class="hero-body">
+    
+       
+
         <div class="hero-text text-center">
             <h1>
-                Sebastián Guerrero <span class="blinker"></span>
+                Sebastián Guerrero <span class="blinker"></span><br />
+                <span class="small">Full Stack Developer</span>
             </h1>
-
-            <h1 class="small">Developer</h1>
-
-            <p>C#, JavaScript, Azure, ASP.Net ...</p>
+            
+            <p>C#, JavaScript, Azure, ASP.Net MVC</p>
 
             <div class="page-scroll">
                 <a href="#profile" class="btn btn-lg btn-custom">
@@ -183,7 +214,7 @@
         </div>
         <!-- //.hero-text -->
     </div>
-    <!-- //.hero-body -->
+        <!-- //.hero-body -->
 </header>
 <!-- //HERO END -->
 
@@ -255,18 +286,15 @@
                             <div class="col-md-12">
                                 <h2 class="section-title">Hello, </h2>
                                 <p>
-                                    My name is Sebastián Guerrero, 37 years young, born and grew up in Salta, Argentina. 
-                                    I am always learning and searching for opportunities to grow up.
+                                    My name is Sebastián Guerrero, 39 years old, born and grew up in Salta, Argentina. <br/>
+                                    I am always learning and searching for new opportunities and challenges.
                                 </p>
                                 <span class="divider"></span>
                                 <p class="text-grey" id="resumeDetails">
-                                    Currently working in a software development company where I am part of a team of professionals specialized in the development of
-                                    web applications for clients in Europe and the USA. Coding with C# and JavaScript, implementing frameworks and libraries such as ASP.Net MVC,
-                                    NHibernate, EntityFramework, StructureMaps, SimpleInjector, LinQ, AutoMapper, SignalR, KnockoutJS, JQuery, BootStrap, etc.
-                                    <br/><br />
-                                    Most of the solutions are running in <a href="https://azure.microsoft.com/en-us/" target="_azure">Azure</a>.
-                                    <br/><br/>
-                                    I have experience working as a team through TeamFoundation and Git.<br/>
+                                    I am currently working as Lead Developer on <a href="https://www.lawpanel.com/about" target="_lawpanel">LawPanel</a>, a SaaS company with base in London and specialized in IP management.<br/>
+                                    <br/>
+                                    I like code with C# and JavaScript, use frameworks and libraries such as ASP.Net MVC, EntityFramework, SimpleInjector, LinQ, AutoMapper, SignalR, JQuery, BootStrap, etc. and 
+                                    deploy solutions in <a href="https://azure.microsoft.com/en-us/" target="_azure">Azure</a>.
                                 </p>
                             </div>
                             <!-- //.col-md-12 -->
@@ -281,9 +309,6 @@
                                 <h4>Contact Details</h4>
                                 <ul class="list-unstyled text-grey">
                                     <li>Sebastián Guerrero</li>
-                                    <li>Tierra del fuego 104</li>
-                                    <li>Cerrillos - Salta - CP 4403</li>
-                                    <li><i class="fa fa-phone"></i> +54 387 4902037</li>
                                     <li><i class="fa fa-mobile-phone"></i> +54 9 387 5333953</li>
                                     <li>hola@sebastian.digital</li>
                                 </ul>
@@ -307,7 +332,7 @@
                 <!-- PROFILE PICTURE START -->
                 <div class="col-md-5 hidden-xs hidden-sm match-height pp-wrapper">
                     <div class="profile-picture style-one">
-                        <img src="images/profile-picture-1.jpg" alt="profile picture" class="img-responsive" />
+                        <img data-src="images/profile-picture-1.jpg" alt="profile picture" class="img-responsive img-lazy-load " />
                     </div>
                 </div>
                 <!-- //PROFILE PICTURE END -->
@@ -359,6 +384,7 @@
             <!-- PORTFOLIO START -->
             <div class="portfolio">
                 <div class="row filterable-portfolio">
+                    
                     <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -374,11 +400,12 @@
                                 <h4>What is Skeddoc?</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-1.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-1.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 skeddoc">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -394,11 +421,12 @@
                                 <h4>Doctor's dashboard</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-2.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-2.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 skeddoc">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -414,11 +442,12 @@
                                 <h4>Patient's CRUD</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-3.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-3.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 skeddoc">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -434,11 +463,12 @@
                                 <h4>Patient's edit</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-4.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-4.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -454,11 +484,12 @@
                                 <h4>What is LawPanel?</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-5.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-5.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 lawpanel">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -474,11 +505,12 @@
                                 <h4>Firm's dashboard</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-6.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-6.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 lawpanel">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -494,11 +526,12 @@
                                 <h4>Portfolio's CRUD</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-7.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-7.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                     <div class="item col-sm-6 col-md-3 lawpanel">
                         <div class="project-wrapper">
                             <div class="project-link">
@@ -514,11 +547,12 @@
                                 <h4>Portfolio's edit</h4>
                             </div>
                             <!-- //.project-title -->
-                            <img src="images/portfolio/project-image-8.jpg" alt="" class="img-responsive" />
+                            <img data-src="images/portfolio/project-image-8.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
                         </div>
                         <!-- //.project-wrapper -->
                     </div>
                     <!-- //.item -->
+
                 </div>
                 <!-- //.row -->
             </div>
@@ -1364,7 +1398,7 @@
                             <div class="item">
                                 <div class="animated" data-animation-effect="flipInX">
                                     <div class="profile hidden-xs">
-                                        <img src="images/references/profile-image-1.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
+                                        <img data-src="images/references/profile-image-1.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
                                     </div>
                                     <div class="content">
                                         <h3>Lorena Group</h3>
@@ -1385,7 +1419,7 @@
                             <div class="item">
                                 <div class="animated" data-animation-effect="flipInX">
                                     <div class="profile hidden-xs">
-                                        <img src="images/references/profile-image-2.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
+                                        <img data-src="images/references/profile-image-2.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
                                     </div>
                                     <div class="content">
                                         <h3>NET TV</h3>
@@ -1406,7 +1440,7 @@
                             <div class="item">
                                 <div class="animated" data-animation-effect="flipInX">
                                     <div class="profile hidden-xs">
-                                        <img src="images/references/profile-image-3.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
+                                        <img data-src="images/references/profile-image-3.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
                                     </div>
                                     <div class="content">
                                         <h3>MNC Group</h3>
@@ -1427,7 +1461,7 @@
                             <div class="item">
                                 <div class="animated" data-animation-effect="flipInX">
                                     <div class="profile hidden-xs">
-                                        <img src="images/references/profile-image-4.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
+                                        <img data-src="images/references/profile-image-4.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
                                     </div>
                                     <div class="content">
                                         <h3>CT Corp</h3>
@@ -1448,7 +1482,7 @@
                             <div class="item">
                                 <div class="animated" data-animation-effect="flipInX">
                                     <div class="profile hidden-xs">
-                                        <img src="images/references/profile-image-5.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
+                                        <img data-src="images/references/profile-image-5.jpg" alt="" class="img-responsive img-lazy-load img-circle img-thumbnail" />
                                     </div>
                                     <div class="content">
                                         <h3>Mustika Ratu</h3>
@@ -1471,19 +1505,19 @@
                         <div class="flexslider-controls">
                             <ul class="flex-control-nav">
                                 <li>
-                                    <img src="images/references/profile-image-1.jpg" alt="" class="img-responsive" />
+                                    <img data-src="images/references/profile-image-1.jpg" alt="" class="img-responsive img-lazy-load " />
                                 </li>
                                 <li>
-                                    <img src="images/references/profile-image-2.jpg" alt="" class="img-responsive" />
+                                    <img data-src="images/references/profile-image-2.jpg" alt="" class="img-responsive img-lazy-load " />
                                 </li>
                                 <li>
-                                    <img src="images/references/profile-image-3.jpg" alt="" class="img-responsive" />
+                                    <img data-src="images/references/profile-image-3.jpg" alt="" class="img-responsive img-lazy-load " />
                                 </li>
                                 <li>
-                                    <img src="images/references/profile-image-4.jpg" alt="" class="img-responsive" />
+                                    <img data-src="images/references/profile-image-4.jpg" alt="" class="img-responsive img-lazy-load " />
                                 </li>
                                 <li>
-                                    <img src="images/references/profile-image-5.jpg" alt="" class="img-responsive" />
+                                    <img data-src="images/references/profile-image-5.jpg" alt="" class="img-responsive img-lazy-load " />
                                 </li>
                             </ul>
                         </div>
@@ -2023,7 +2057,7 @@
                     <!-- Linkedin -->
                     <li>
                         <div class="item">
-                            <a href="https://www.linkedin.com/in/ricardosebastianguerrero" target="_blank" title="See my profile on Linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://ar.linkedin.com/in/ricardosebastianguerrero/en" target="_blank" title="See my profile on Linkedin"><i class="fa fa-linkedin"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
@@ -2056,14 +2090,6 @@
                     <li>
                         <div class="item">
                             <a href="https://www.youtube.com/c/SebaGuerrero" target="_blank" title="Visit my channel on YouTube"><i class="fa fa-youtube"></i></a>
-                        </div>
-                        <!-- //.item -->
-                    </li>
-
-                    <!-- Google+ -->
-                    <li>
-                        <div class="item">
-                            <a href="https://plus.google.com/u/0/+SebaGuerrero" target="_blank" title="See my profile on Google+"><i class="fa fa-google-plus"></i></a>
                         </div>
                         <!-- //.item -->
                     </li>
