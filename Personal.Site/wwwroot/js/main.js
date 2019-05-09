@@ -169,6 +169,18 @@ $(function(){
             }
         });
 
+        $('.popup-modal').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#username',
+            modal: true
+        });
+        $(document).on('click', '.popup-modal-dismiss', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+
+
         $('.portfolio:not(.portfolio-youtube)').magnificPopup({
             delegate: 'a.zoom',
             type: 'image',
@@ -181,11 +193,11 @@ $(function(){
             mainClass: 'mfp-fade',
 
             gallery: {
-                enabled: true,
+                enabled: false,
                 preload: [0,2],
                 arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-                tPrev: 'Previous Project',
-                tNext: 'Next Project'
+                tPrev: 'Previous',
+                tNext: 'Next'
             }            
         });
 
@@ -380,8 +392,8 @@ $(function(){
    const defaults = {
       imageLoadedClass: 'js-lazy-image--handled',
       imageSelector: '.img-lazy-load',
-      // If the image gets within 10px in the Y axis, start the download.
-      rootMargin: '5px 0px',
+      // If the image gets within 50px in the Y axis, start the download.
+      rootMargin: '50px 0px',
       threshold: 0.01
     };
 
