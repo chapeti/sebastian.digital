@@ -1,6 +1,5 @@
 ﻿@model Personal.Site.Models.HomeViewModels.HomeViewModel
 
-
 <style>
     
     .project-wrapper {
@@ -159,6 +158,21 @@
         width: 50%;
     }
 
+    .visitMyYouTubeChannel {
+        padding: 35px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .visitMyYouTubeChannel i {
+        font-size: 1.6em;
+    }
+
+    .visitMyYouTubeChannel a {
+        color: #929292;
+        font-weight: bold;
+    }
+
     @@keyframes octocat-wave {
         0%,100% {
             transform: rotate(0);
@@ -294,15 +308,15 @@
                             <div class="col-md-12">
                                 <h2 class="section-title">Hello, </h2>
                                 <p>
-                                    My name is Sebastián Guerrero, 39 years old, born and grew up in Salta, Argentina. <br/>
+                                    My name is Sebastián Guerrero, 39 years old, born and grown up in Salta, Argentina. <br/>
                                     I am always learning and searching for new opportunities and challenges.
                                 </p>
                                 <span class="divider"></span>
                                 <p class="text-grey" id="resumeDetails">
                                     I am currently working as Lead Developer on <a href="https://www.lawpanel.com/about" target="_lawpanel">LawPanel</a>, a SaaS company with base in London and specialized in IP management.<br/>
                                     <br/>
-                                    I like code with C# and JavaScript, use frameworks and libraries such as ASP.Net MVC, EntityFramework, SimpleInjector, LinQ, AutoMapper, SignalR, JQuery, BootStrap, etc. and 
-                                    deploy solutions in <a href="https://azure.microsoft.com/en-us/" target="_azure">Azure</a>.
+                                    I like coding with C# and JavaScript, using frameworks and libraries such as ASP.Net MVC, EntityFramework, SimpleInjector, LinQ, AutoMapper, SignalR, JQuery, BootStrap, etc., and 
+                                    deploying solutions on <a href="https://azure.microsoft.com/en-us/" target="_azure">Azure</a>.
                                 </p>
                             </div>
                             <!-- //.col-md-12 -->
@@ -318,16 +332,13 @@
                                 <ul class="list-unstyled text-grey">
                                     <li>Sebastián Guerrero</li>
                                     <li><i class="fa fa-mobile-phone"></i> +54 9 387 5333953</li>
-                                    <li>hola@sebastian.digital</li>
+                                    <li>hi@sebastianguerrero.dev</li>
                                 </ul>
                             </div>
                             <!-- //.col-md-5 -->
                             <div class="col-sm-6 col-md-7">
-                                <a href="/others/CV - Ricardo Sebastian Guerrero-es.pdf" class="btn btn-lg btn-custom" target="_resumeES">
-                                    <span class="flag-icon flag-icon-es"></span> Download Resume 
-                                </a>
-                                <a href="/others/CV - Ricardo Sebastian Guerrero-en.pdf" class="btn btn-lg btn-custom" target="_resumeEN" style="display: none">
-                                    <span class="flag-icon flag-icon-gb"></span> Download Resume
+                                <a href="/others/000-RESUME-Sebastian Guerrero-en.pdf" class="btn btn-lg btn-custom" target="_resumeEN">
+                                    Download Resume 
                                 </a>
                             </div>
                             <!-- //.col-md-6 -->
@@ -360,7 +371,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="section-title">My latest works</h2>
-                    <p class="section-subtitle">The latest two projects where I worked as developer: <a href="https://www.skeddoc.com" alt="Skeddoc link" target="_skeddoc">Skeddoc</a> and <a href="http://www.lawpanel.com" alt="LawPanel link" target="_lawpanel">LawPanel</a>.</p>
+                    <p class="section-subtitle">The latest two projects where I worked as full stack developer: <a href="https://www.skeddoc.com" alt="Skeddoc link" target="_skeddoc">Skeddoc</a> and <a href="http://www.lawpanel.com" alt="LawPanel link" target="_lawpanel">LawPanel</a>.</p>
                     <span class="divider center"></span>
                     </div>
                 <!-- //.col-md-12 -->
@@ -391,248 +402,251 @@
 
             <!-- PORTFOLIO START -->
         <div class="portfolio">
-            
-           
 
-            <div class="row filterable-portfolio">
+        <div class="row filterable-portfolio">
 
-                <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=gmNdlPVmC-o" class="zoom" title="Play video">
-                                <i class="icon-Video"></i>
-                            </a>
-                            <a href="https://www.skeddoc.com" target="_blank" class="external-link" title="Go to skeddoc.com">
-                                <i class="icon-Link"></i>
-                            </a>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>What is Skeddoc?</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-1.jpg" alt="" class="img-responsive img-lazy-load portfolioImage"/>
-                    </div>
-                    <!-- //.project-wrapper -->
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=gmNdlPVmC-o" class="zoom" title="Play video">
+                        <i class="icon-Video"></i>
+                    </a>
+                    <a href="https://www.skeddoc.com" target="_blank" class="external-link" title="Go to skeddoc.com">
+                        <i class="icon-Link"></i>
+                    </a>
                 </div>
-                <!-- //.item -->
-
-                <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=l3gj3M-_AlY" target="_blank" class="zoom" title="Watch patients form in action">
-                                <i class="icon-Video-3"></i>
-                            </a>
-                            <a href="#skeddoc-dashboard-modal-info" class="popup-modal external-link" title="About Case management">
-                                <i class="icon-Info-Window"></i>
-                            </a>
-                            <div id="skeddoc-dashboard-modal-info" class="white-popup-block mfp-hide">
-                                <h1>Doctor dashboard</h1>
-                                <br />
-                                <p>
-                                    Doctors can create, read, update and delete appointments, change default view between daily, weekly, monthly, check patients details, filter by practice, specialty, etc.
-                                </p>
-                                <br />
-                                <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
-                            </div>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>Doctor dashboard</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-2.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
-                    </div>
-                    <!-- //.project-wrapper -->
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>What is Skeddoc?</h4>
                 </div>
-                <!-- //.item -->
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-1.jpg" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
 
-                <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=-CsTZW7Y8ng" target="_blank" class="zoom" title="Watch patients form in action">
-                                <i class="icon-Video-3"></i>
-                            </a>
-                            <a href="#skeddoc-patients-modal-info" class="popup-modal external-link" title="About Case management">
-                                <i class="icon-Info-Window"></i>
-                            </a>
-                            <div id="skeddoc-patients-modal-info" class="white-popup-block mfp-hide">
-                                <h1>Patients</h1>
-                                <br/>
-                                <p>
-                                    Users can create, edit, update and delete patients entities, save notes, pictures, access to history, etc, in a very easy way.
-                                </p>
-                                <br/>
-                                <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
-                            </div>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>Patients</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-3.jpg" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=l3gj3M-_AlY" target="_blank" class="zoom" title="Watch doctor's dashboard in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#skeddoc-dashboard-modal-info" class="popup-modal external-link" title="About Case management">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="skeddoc-dashboard-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Doctor's Dashboard</h1>
+                        <br />
+                        <p>
+                            Doctors can create, read, update and delete appointments; change default view to daily, weekly, monthly; check patients details; filter by practice, specialty etc.
+                        </p>
+                        <br />
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
                     </div>
-                    <!-- //.project-wrapper -->
                 </div>
-                <!-- //.item -->
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Doctor's Dashboard</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-2.jpg" alt="" class="img-responsive img-lazy-load portfolioImage" />
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
 
-                <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=QarnxM6lVcE" target="_blank" class="zoom" title="Watch settings in action">
-                                <i class="icon-Video-3"></i>
-                            </a>
-                            <a href="#skeddoc-settings-modal-info" class="popup-modal external-link" title="About Settings">
-                                <i class="icon-Info-Window"></i>
-                            </a>
-                            <div id="skeddoc-settings-modal-info" class="white-popup-block mfp-hide">
-                                <h1>Settings</h1>
-                                <br/>
-                                <p>
-                                    Users can create multiple practices with multiple specialties, define days and hours to create appointments, configure widgets, etc.
-                                </p>
-                                <br/>
-                                <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
-                            </div>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>Settings</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-4-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=-CsTZW7Y8ng" target="_blank" class="zoom" title="Watch patients form in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#skeddoc-patients-modal-info" class="popup-modal external-link" title="About Case management">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="skeddoc-patients-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Patients</h1>
+                        <br/>
+                        <p>
+                            Users can create, edit, update and delete patients entities; save notes, pictures; access to history, etc., in a very easy way.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
                     </div>
-                    <!-- //.project-wrapper -->
                 </div>
-                <!-- //.item -->
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Patients</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-3.jpg" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
 
-                <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=mMxAAuEWuQE" class="zoom" title="Play video">
-                                <i class="icon-Video"></i>
-                            </a>
-                            <a href="http://www.lawpanel.com" target="_blank" class="external-link" title="Go to lawpanel.com">
-                                <i class="icon-Link"></i>
-                            </a>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>What is LawPanel?</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-5.jpg" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+        <div class="item col-sm-6 col-md-3 skeddoc portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=QarnxM6lVcE" target="_blank" class="zoom" title="Watch settings in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#skeddoc-settings-modal-info" class="popup-modal external-link" title="About Settings">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="skeddoc-settings-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Settings</h1>
+                        <br/>
+                        <p>
+                            Users can create multiple consulting rooms for multiple specialties; define days and hours to create appointments; set widgets, etc.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
                     </div>
-                    <!-- //.project-wrapper -->
                 </div>
-                <!-- //.item -->
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Settings</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-4-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
 
-                <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=-5jm0KU6KeY" target="_blank" class="zoom" title="Watch case management in action">
-                                <i class="icon-Video-3"></i>
-                            </a>
-                            <a href="#lawpanel-case-management-modal-info" class="popup-modal external-link" title="About Case management">
-                                <i class="icon-Info-Window"></i>
-                            </a>
-                            <div id="lawpanel-case-management-modal-info" class="white-popup-block mfp-hide">
-                                <h1>Case management</h1>
-                                <br/>
-                                <p>
-                                    LawPanel offers its users this functionality through which they manage and organize all their cases according to the particularities of each type.
-                                </p>
-                                <p>
-                                    Users can save specific details of each case (template fields) along with generally common information: related trademarks, reminders, attachments, references to clients, notes, reports, etc.
-                                </p>
-                                <br/>
-                                <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
-                            </div>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>Case management</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-6-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=mMxAAuEWuQE" class="zoom" title="Play video">
+                        <i class="icon-Video"></i>
+                    </a>
+                    <a href="http://www.lawpanel.com" target="_blank" class="external-link" title="Go to lawpanel.com">
+                        <i class="icon-Link"></i>
+                    </a>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>What is LawPanel?</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-5.jpg" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
 
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=-5jm0KU6KeY" target="_blank" class="zoom" title="Watch case management in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#lawpanel-case-management-modal-info" class="popup-modal external-link" title="About case management">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="lawpanel-case-management-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Case Management</h1>
+                        <br/>
+                        <p>
+                            LawPanel offers its users this functionality through which they manage and organize all their cases according to the particularities of each one.
+                        </p>
+                        <p>
+                            Users can save specific details of each case (template fields) along with basic information: related trademarks, reminders, attachments, references to clients, notes, reports, etc.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
                     </div>
-                    <!-- //.project-wrapper -->
                 </div>
-                <!-- //.item -->
-
-                <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=qBWvCUENdcs" target="_blank" class="zoom" title="Watch templates edition in action">
-                                <i class="icon-Video-3"></i>
-                            </a>
-                            <a href="#lawpanel-templates-modal-info" class="popup-modal external-link" title="About Templates">
-                                <i class="icon-Info-Window"></i>
-                            </a>
-                            <div id="lawpanel-templates-modal-info" class="white-popup-block mfp-hide">
-                                <h1>Templates</h1>
-                                <br/>
-                                <p>
-                                    Templates are a feature to define types of cases. For example, a type named "Trademark" may contains fields like "Owner", "Type of trademark", or a type named "Opposition" may contains fields
-                                    like "Opponent name", "Opposition reason", etc.
-                                </p>
-                                <p>
-                                    With this feature users can define their own types to handle different requirements.
-                                </p>
-                                <br/>
-                                <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
-                            </div>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>Templates</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-7-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
-                    </div>
-                    <!-- //.project-wrapper -->
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Case Management</h4>
                 </div>
-                <!-- //.item -->
-
-                <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
-                    <div class="project-wrapper">
-                        <div class="project-link">
-                            <a href="https://www.youtube.com/watch?v=bQ1eidmzcPo" target="_blank" class="zoom" title="Watch reporting in action">
-                                <i class="icon-Video-3"></i>
-                            </a>
-                            <a href="#lawpanel-reporting-modal-info" class="popup-modal external-link" title="About reporting">
-                                <i class="icon-Info-Window"></i>
-                            </a>
-                            <div id="lawpanel-reporting-modal-info" class="white-popup-block mfp-hide">
-                                <h1>Reporting</h1>
-                                <br/>
-                                <p>
-                                    This feature is aimed to allow users personalize system reports. Everything is performed online. 
-                                </p>
-                                <p>
-                                    I chose the <a href="https://www.devexpress.com" target="_devexpress">DevExpress</a> report tool, very easy to implement and use.
-                                </p>
-                                <br/>
-                                <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
-                            </div>
-                        </div>
-                        <!-- //.project-link -->
-                        <div class="project-title">
-                            <h4>Reporting</h4>
-                        </div>
-                        <!-- //.project-title -->
-                        <img src="images/portfolio/project-image-8-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
-                    </div>
-                    <!-- //.project-wrapper -->
-                </div>
-                <!-- //.item -->
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-6-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
 
             </div>
-            <!-- //.row -->
+            <!-- //.project-wrapper -->
         </div>
-            <!-- PORTFOLIO END -->
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=qBWvCUENdcs" target="_blank" class="zoom" title="Watch templates edition in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#lawpanel-templates-modal-info" class="popup-modal external-link" title="About Templates">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="lawpanel-templates-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Templates</h1>
+                        <br/>
+                        <p>
+                            Templates are a feature to define types of cases. For example, a type named "Trademark" may contain fields like "Owner", "Trademark Type"; or a type named "Opposition" may contain fields
+                            like "Opponent name", "Opposition reason" etc.
+                        </p>
+                        <p>
+                            With this feature users can handle their own case types.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Templates</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-7-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        <div class="item col-sm-6 col-md-3 lawpanel portfolio-youtube">
+            <div class="project-wrapper">
+                <div class="project-link">
+                    <a href="https://www.youtube.com/watch?v=bQ1eidmzcPo" target="_blank" class="zoom" title="Watch reporting in action">
+                        <i class="icon-Video-3"></i>
+                    </a>
+                    <a href="#lawpanel-reporting-modal-info" class="popup-modal external-link" title="About reporting">
+                        <i class="icon-Info-Window"></i>
+                    </a>
+                    <div id="lawpanel-reporting-modal-info" class="white-popup-block mfp-hide">
+                        <h1>Reporting</h1>
+                        <br/>
+                        <p>
+                            This feature is aimed at allowing users personalize system reports. Everything is performed online. 
+                        </p>
+                        <p>
+                            I chose the <a href="https://www.devexpress.com" target="_devexpress">DevExpress</a> report tool, very easy to implement and use.
+                        </p>
+                        <br/>
+                        <p><a class="popup-modal-dismiss" href="#">Ok</a></p>
+                    </div>
+                </div>
+                <!-- //.project-link -->
+                <div class="project-title">
+                    <h4>Reporting</h4>
+                </div>
+                <!-- //.project-title -->
+                <img src="images/portfolio/project-image-8-square.png" alt="" class="img-responsive img-lazy-load portfolioImage"/>
+            </div>
+            <!-- //.project-wrapper -->
+        </div>
+        <!-- //.item -->
+
+        </div>
+        <!-- //.row -->
+        </div>
+        
+        <div class="row visitMyYouTubeChannel">
+            You can visit my <a href="https://www.youtube.com/channel/UCPYD8gVs85-rogmQsuI03Ag" target="_youTubeChannel"><i class="fa fa-youtube"></i> channel</a> to watch other developments and features.
+        </div>
+
+        <!-- PORTFOLIO END -->
         </div>
         <!-- //.section-content -->
     </div>
@@ -666,7 +680,7 @@
                             <h4>1. Web full stack</h4>
                             <p class="text-grey">
                                 Full stack web applications from scratch, using agile methodologies,
-                                making deliveries periodically agreed and managed through
+                                making periodic deliveries agreed and managed through
                                 tools such as TeamWork or BaseCamp. Do you need a web application? 
                                 <a href="#contact">Contact me</a>.
                             </p>
@@ -680,34 +694,26 @@
                             <i class="icon-Monitor-Tablet colored-text"></i>
                             <h4>2. Desktop/mobile</h4>
                             <p class="text-grey">
-                                I have experience developing desktop systems and mobile applications for the management of institutions with numerous affiliates: 
-                                accounting, billings, appointments, records, reports, etc.
+                                I have experience developing desktop systems and mobile applications for organization management: accounting, billings, appointments, records, reports etc.
                             </p>
                         </div>
                         <!-- //.inner-content -->
                     </div>
-
-
+                    
                     <!-- //.item -->
                     <div class="col-sm-4 item match-height">
                         <div class="inner-content">
                             <i class="icon-Consulting colored-text"></i>
                             <h4>3. Consulting</h4>
                             <p class="text-grey">
-                                Do you have a project in mind and want to know what technology you should use? Knowing estimated development times?
+                                Do you have a project in mind and want to know what technology you should use? Do you want to know the estimated development time?
                                 Are you using your resources efficiently? 
                                 I can advise you, <a href="#contact">contact me</a>.
                             </p>
                         </div>
                         <!-- //.inner-content -->
                     </div>
-
-
-
-
-
-
-                 
+                    
                     <!-- //.item -->
                 </div>
                 <!-- //.row -->
@@ -751,7 +757,7 @@
                             </div>
                             <!-- //.item -->
                             <div class="item">
-                                <h4>Preety Good</h4>
+                                <h4>Pretty Good</h4>
                             </div>
                             <!-- //.item -->
                             <div class="item">
@@ -841,7 +847,7 @@
         <div class="section-content">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h2 class="section-title uppercase">Curriculum</h2>
+                    <h2 class="section-title uppercase">Resume</h2>
 
                     <p class="section-subtitle animated bounceInLeft" style="opacity: 1;">
 
@@ -887,14 +893,15 @@
                                     <div class="panel-body text-grey">
                                         <p>
 
-                                        </p><ul>
+                                        </p>
+                                        <ul>
                                             <li>
-                                                Analisys, coding, testing, implementation, architecture, etc.
+                                                Analysis, coding, testing, implementation, architecture, etc.
                                                 <br><br>
                                             </li>
 
                                             <li>
-                                                <strong>Achievement</strong>: API centralized design solution with successful integration into production systems. 
+                                                <strong>Achievement</strong>: API centralized design solution with successful integration of production systems. 
                                                 <br><br>
                                             </li>
 
@@ -970,7 +977,7 @@
                                             </li>
 
                                             <li>
-                                                <strong>Achievement</strong>: Startups created successfully from scratch for clients of Europe and the USA.
+                                                <strong>Achievement</strong>: Startups created successfully from scratch for clients from Europe and the USA.
                                                 <br><br>
                                             </li>
 
@@ -1033,13 +1040,13 @@
                                 </div>
                                 <!-- //.panel-heading -->
 
-                                <div id="workBrightstar" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div id="workBrightstar" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
                                     <div class="panel-body text-grey">
                                         <p>
                                         </p><ul>
 
                                             <li>
-                                                Development and maintenance of support solutions to the Production Line. Third-level support to the production area in the event of any downtime in production lines.
+                                                Development and maintenance of support solutions to the Production Line. Third-level support to the production area in production lines in the event of any downtime.
                                                 <br><br>
                                             </li>
 
@@ -1108,7 +1115,7 @@
                                             </li>
 
                                             <li>
-                                                <strong>Achievement</strong>: Implementation of a SaaS System for the management of private health in Milan (Italy) called "Skeddoc" which currently continues to be a service to more than 8,000 patients and doctors.
+                                                <strong>Achievement</strong>: Implementation of a SaaS System for the management of private health in Milan (Italy) called "Skeddoc" which currently continues serving thousands of patients and doctors.
                                                 <br><br>
                                             </li>
 
@@ -1172,11 +1179,11 @@
                                         </p><ul>
 
                                             <li>
-                                                Analysis and proposal of change of technology. Migration of the data warehouse. Development, implementation, and maintenance of an Integral Management System of the organization.
+                                                Analysis and proposal of changes in technology. Migration of the data warehouse. Development, implementation, and maintenance of an Integral Management System of the organization.
                                                 <br><br>
                                             </li>
                                             <li>
-                                                <strong>Achievement</strong>: Migration of a system that operated 15 years ago and with information of 4,700 members to a new implementation more modern, leaving the information, processes and new developments 100% functional.
+                                                <strong>Achievement</strong>: Migration of a system that operated 15 years ago with information of thousands of members to a new more modern implementation, keeping the information, processes and new developments without interruptions after the implementation.
                                                 <br><br>
                                             </li>
                                             <li>
@@ -1231,11 +1238,11 @@
                                         </p><ul>
 
                                             <li>
-                                                Development, analysis, and maintenance of the Management System of the institution. Configuration and maintenance of servers of BBDD, mail, and the web. Management of own annual budget. Analysis of the requirements of the Administrative area. Coordination of two systems to exchange information through APIs and other interaction mechanisms.
+                                                Development, analysis, and maintenance of the Management System of the organization. Configuration and maintenance of servers of BBDD, mail, and the web. Management of own annual budget. Analysis of the requirements of the Administrative area. Coordination of two systems to exchange information through APIs and other interaction mechanisms.
                                                 <br><br>
                                             </li>
                                             <li>
-                                                <strong>Achievement</strong>: Complete systematization of all the fundamental processes of the company, thanks to which they stopped using Excel spreadsheets, individual files of affiliates in paper, and written accounting books.
+                                                <strong>Achievement</strong>: Complete systematization of all the fundamental processes of the organization, thanks to which they stopped using Excel spreadsheets, individual files of affiliates in paper, and written accounting books.
                                                 <br><br>
                                             </li>
                                             <li>
